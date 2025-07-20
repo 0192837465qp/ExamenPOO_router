@@ -4,7 +4,7 @@
 #include"router.h"
 void network::printNetworkTopology()
 {
-	printf("$s:\nLista R asociate:\n", this->ID);
+	printf("%s:\nLista R asociate:\n", this->ID);
 	for (int i = 0; i < this->listaRoutere.size(); i++)
 	{
 		this->listaRoutere[i].printRouterInfo();

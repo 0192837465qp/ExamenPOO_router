@@ -6,7 +6,7 @@
 
 void Switch::printSwitchInfo()
 {
-	printf("$s:\n%s\nLista dispozitive asociate:\n", this->name, this->subnetMask);
+	printf("%s:\n%s\nLista dispozitive asociate:\n", this->name, this->subnetMask);
 	for (int i = 0; i < this->listaStatii.size(); i++)
 	{
 		this->listaStatii[i].printInfo();

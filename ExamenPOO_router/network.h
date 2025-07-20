@@ -10,7 +10,9 @@ private:
 	std::vector<router>listaRoutere;
 	std::string ID;
 public:
+	network(std::string ID): ID(ID){}
 	void printNetworkTopology()override;
 	void addRouterToNetwork(std::string name, std::string mask)override;
+	void populateNetwork()override;
 };
 

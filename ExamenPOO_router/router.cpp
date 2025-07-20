@@ -6,7 +6,7 @@
 
 void router::printRouterInfo()
 {
-	printf("$s:\n%s\nLista SW asociate:\n", this->name, this->mask);
+	printf("%s:\n%s\nLista SW asociate:\n", this->name, this->mask);
 	for (int i = 0; i < this->listaSwitchuri.size(); i++)
 	{
 		this->listaSwitchuri[i].printSwitchInfo();

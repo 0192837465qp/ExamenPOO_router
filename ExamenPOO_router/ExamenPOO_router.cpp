@@ -1,7 +1,11 @@
 #include <iostream>
+#include"network.h"
+#include<string>
+#include<vector>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    network retea("192");
+    
     return 0;
 }
