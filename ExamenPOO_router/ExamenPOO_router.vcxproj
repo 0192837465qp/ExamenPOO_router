@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ExamenPOO_router.cpp" />
+    <ClCompile Include="frame.cpp" />
     <ClCompile Include="i_network.cpp" />
     <ClCompile Include="i_router.cpp" />
     <ClCompile Include="i_station.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="Switch.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frame.h" />
     <ClInclude Include="i_network.h" />
     <ClInclude Include="i_router.h" />
     <ClInclude Include="i_station.h" />

@@ -1,4 +1,4 @@
-
+﻿
 #include<iostream>
 #include<string>
 #include"i_switch.h"
@@ -16,5 +16,13 @@ public:
 		name(name),subnetMask(subnetMask){ }
 	void printSwitchInfo()override;
 	void addStationToSwitch(std::string name, std::string subnetMask,int ID)override;
+	std::vector<station> returnStationList()
+	{
+		return this->listaStatii;
+	}
+	std::string getMask()
+	{
+		return subnetMask;
+	}
 };
 

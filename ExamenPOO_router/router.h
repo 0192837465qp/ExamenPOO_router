@@ -3,6 +3,8 @@
 #include<string>
 #include<vector>
 #include"Switch.h"
+#include"station.h"
+
 #pragma once
 class router:private i_router
 {
@@ -15,5 +17,16 @@ public:
 		name(name),mask(mask){ }
 	void printRouterInfo()override;
 	void addSwitchToRouter(std::string name,std::string subnetMask)override;
+	std::string getMask() {
+		return this->mask;
+	}
+	std::vector<Switch>& returnSwitchList()
+	{
+		return this->listaSwitchuri;
+	}
+	std::vector<station> returnStationListFromSwitch(int index)
+	{
+		return this->listaSwitchuri[index].returnStationList();
+	}
 };
 

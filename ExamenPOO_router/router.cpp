@@ -1,4 +1,4 @@
-#include "router.h"
+﻿#include "router.h"
 #include "Switch.h"
 #include<string>
 #include<iostream>
@@ -6,7 +6,12 @@
 
 void router::printRouterInfo()
 {
-	printf("%s:\n%s\nLista SW asociate:\n", this->name, this->mask);
+	std::cout << this->name;
+	std::cout << ":\n";
+	std::cout << this->mask;
+	std::cout<<"\nLista SW asociate : \n";
+	
+	
 	for (int i = 0; i < this->listaSwitchuri.size(); i++)
 	{
 		this->listaSwitchuri[i].printSwitchInfo();

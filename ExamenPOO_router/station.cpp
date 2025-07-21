@@ -7,5 +7,7 @@ int station::getIP(int ip)
 
 void station::printInfo()
 {
-    printf("%s:\n%s\n%d", this->subnetMask, this->name, this->ID);
+    std::cout << this->name << ":" << std::endl;
+    std::cout << this->subnetMask << std::endl;
+    std::cout << this->ID << std::endl;
 }

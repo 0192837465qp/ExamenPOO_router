@@ -1,4 +1,4 @@
-#include"i_network.h"
+﻿#include"i_network.h"
 #include<iostream>
 #include<string>
 #include<vector>
@@ -13,6 +13,7 @@ public:
 	network(std::string ID): ID(ID){}
 	void printNetworkTopology()override;
 	void addRouterToNetwork(std::string name, std::string mask)override;
-	void populateNetwork()override;
+	void populateNetwork(const std::string& file)override;
+	
 };
 
